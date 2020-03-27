@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<galerie
+        xs:noNamespaceSchemaLocation="galerieart.xsd"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+        adresse="2 rue de la poupee qui tousse"
+>
+    <gerant>Polux</gerant>
+    <oeuvre>
+        <type>peinture</type>
+        <auteur>Kandinsky</auteur>
+        <titre>lignes dintersection</titre>
+        <prix>200</prix>
+    </oeuvre>
+    <oeuvre>
+        <type>gravure</type>
+        <auteur>graveur1</auteur>
+        <prix>5</prix>
+    </oeuvre>
+    <oeuvre>
+        <type>sculpture</type>
+        <auteur>rodin</auteur>
+        <titre>penseur</titre>
+    </oeuvre>
+    <oeuvre>
+        <type>tapisserie</type>
+        <auteur>Delaunay</auteur>
+    </oeuvre>
+    <oeuvre>
+        <type>peinture</type>
+        <auteur>peintre2</auteur>
+    </oeuvre>
+</galerie>

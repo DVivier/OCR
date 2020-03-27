@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliotheque SYSTEM "biblio1.dtd">
+<!--<!DOCTYPE bibliotheque [-->
+<!--        <!ELEMENT bibliotheque (livre)+ >-->
+<!--        <!ELEMENT livre (titre, auteur) >-->
+<!--        <!ATTLIST livre genre (fiction|drame|aventure|policier) #REQUIRED>-->
+<!--        <!ELEMENT titre (#PCDATA) >-->
+<!--        <!ELEMENT auteur (#PCDATA) >]>-->
+
+<bibliotheque>
+    <livre genre="fiction">
+        <titre>livre1</titre>
+        <auteur>Auteur1</auteur>
+    </livre>
+    <livre genre="drame">
+        <titre>livre2</titre>
+        <auteur>Autrice1</auteur>
+    </livre>
+</bibliotheque>
