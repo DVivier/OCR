@@ -1,5 +1,6 @@
 package OCR.testunitaires.test;
 
+import OCR.testunitaires.main.*;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -102,10 +103,7 @@ public class CalculatorImplTest {
         int b = 0;
         int attendu = 0;
         int result = unCaclul.divide(a, b);
-        if (result != attendu) {
-            fail("a = 0  : " + a + "/" + b + "=" + attendu + " ; résultat obtenu : " + result);
-        }
-        System.out.println("OK");
+
     }
 
     @Test

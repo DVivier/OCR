@@ -1,4 +1,4 @@
-package OCR.testunitaires.test;
+package OCR.testunitaires.main;
 
 import OCR.testunitaires.main.Calculator;
 
