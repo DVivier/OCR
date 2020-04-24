@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Tests formulaires</title>
+	    <link rel="stylesheet" href="formulaires.css" />
+    </head>
+    
+    <body>
+        <p>Texte avant le formulaire</p>
+        <form method="post" action="traitement.php">
+            <fieldset id="infos_perso">
+                <legend>Vos infos perso</legend>
+                <p>
+                    <label for="idPseudo">votre pseudo : </label> 
+                    <input type="text" name ="pseudo" id="idPseudo" value="" placeholder="taper votre pseudo" maxlength=15/ autofocus>
+                </p>  
+                
+                <!-- Formulaire pour mot de passe / masqué -->
+                <p>
+                    <label for="idMotDePasse">votre mot de passe : </label> 
+                    <input type="password" name="motDePasse" id="idMotDePasse" value="" placeholder="taper votre mdp" maxlength=15 />
+                </p>  
+                
+                <!-- Formulaire pour e-mail -->
+                <p>
+                    <label for="idMail">votre e-mail : </label> 
+                    <input type="email" name="email" id="idMail" value="" placeholder="Votre e-mail" required/>
+                </p>  
+            </fieldset>
+            
+            <fieldset>
+                <legend>Vos préférences</legend>
+                <!-- Formulaire pour couleur -->
+                <p>
+                    <label for="idCouleur">Choisissez vote couleur : </label> 
+                    <input type="color" name="couleur" id="idCouleur"/>
+                </p>  
+
+                <!-- Formulaire pour choix (les label ont tous les mêmes "name"-->
+                <p>
+                    Vous préférez : <br/>
+                    <input type="radio" name="moment" id="idMatin" value="matin"/>
+                    <label for="idMatin">Le matin </label> 
+                    <br/>
+
+                    <input type="radio" name="moment" id="idAprem" value="aprem" checked/>
+                    <label for="idAprem">L'après-midi </label> 
+                    <br/>
+                    
+                    <input type="radio" name="moment" id="idSoir" value="soir"/>
+                    <label for="idSoir">Le soir </label> 
+                    <br/>
+                </p>  
+
+                <!--  -->
+                <p>
+                    <label for="idMomentListe"> Vous préférez : <br/></label>
+                    <select name="listeMoment" id="idMomentListe">
+                        <optgroup label="journée">
+                            <option value="matin">Le matin</option>
+                            <option value="aprem" selected>L'après-midi</option>
+                            <option value="soir">Le soir</option>
+                        </optgroup>
+                        <optgroup label="nuit">
+                            <option value="crepuscule">Le crépuscule</option>
+                            <option value="nuit" >La nuit noire</option>
+                            <option value="aurore">L'aurorer</option>
+                        </optgroup>
+                    </select>
+                
+                </p>
+            </fieldset>
+
+            <!-- Formulaire multiignes -->
+            <p>
+                <label for="idProse">Taper votre prose : </label> 
+                <br/>
+                <textarea name="prose" id="idProse" rows="3" cols="40">Je n'ai rien à dire ! Merci !</textarea>
+            </p>  
+
+            <p>
+                <input type="submit" value="Envoyer" id=envoyer>
+            </p>
+        </form>
+
+
+        <p>Texte après le formulaire</p>    
+    </body>
+</html>

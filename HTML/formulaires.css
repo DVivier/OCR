@@ -1,0 +1,28 @@
+
+fieldset
+{
+    width: 25%;
+    margin-bottom: 3em;
+}
+
+label[for=idPseudo]     
+{
+    color: orangered;
+}
+
+#infos_perso label
+{
+    display: inline-block;
+    width: 10em;
+}
+
+:required
+{
+    border-color: orangered;
+}
+
+#envoyer
+{
+    background-color: palegoldenrod;
+    font-style: italic;
+}

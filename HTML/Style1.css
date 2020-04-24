@@ -1,0 +1,239 @@
+@font-face {
+	font-family : 'Airstream';
+	src: url('Font/Airstream.eot');
+	src: url('Font/Airstream.eot?iefix') format('eot'),
+	     url('Font/Airstream.woff') format('woff'),
+	     url('Font/Airstream.ttf') format('truetype'),
+	     url('Font/Airstream.svg#Airstream') format('svg');
+}
+
+@font-face {
+	font-family : 'Merienda-Regular';
+	src: url('Font/Merienda-Regular.ttf');
+}
+
+@font-face {
+	font-family : 'Merienda';
+	src: url('Font/Merienda.ttf');
+}
+
+header
+{
+	background-color: #E6B6B0;
+}
+
+header p
+{
+	color: black;
+	text-align: center;
+}
+
+body
+{
+	color: white;
+/*	background-image: url("pouet.png");*/
+}
+
+a		/*  Liens non visités en bleu*/
+{
+	color: blue;
+}
+
+a:visited		/*  Liens visités en bleu, aussi*/
+{
+	color: blue;
+}
+
+p
+{
+	color: #804000;
+	font-size:  1em;
+	text-align: justify;
+}
+
+h1
+{
+	color: red;
+	font-size: 50px;
+	font-style: italic;
+	text-align: center;
+	border: 3px blue dashed;
+}
+
+h2
+{
+	color: green;
+	font-size : 3em;
+	font-style: oblique;
+}
+
+h3
+{
+	color: orange;
+/*  	font-size : 2em;  */
+	text-shadow: 10px 10px 5px orange;
+}
+
+em
+{
+	color: yellow;
+}
+
+mark
+{
+	background-color: orange;
+}
+
+
+
+
+.accentue
+{
+	color: orange;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #005AFF;
+}
+
+.accentue:hover   /* lorsque l'on passe dessus avec la souris */
+{
+	font-size: 2em;
+
+}
+
+.on_barre
+{
+	text-decoration: line-through;
+}
+
+.on_barre:hover
+{
+	color: black;
+	text-decoration: line-through;
+}
+#parag1
+{
+	font-size: 0.8em;
+}
+
+.imageFlottanteGauche
+{
+	float: left
+}
+
+.apresFlottante
+{
+	clear: both;
+}
+
+#section1
+{
+	width: 50%;
+	min-width: 1000px;
+	background-color: grey;
+	border: 5px yellow groove;
+ 	padding-right: 4px;
+	padding-left: 15px;
+}
+
+#section1 p
+{
+	color: white;
+}
+
+#section2
+{
+	width: 25%;
+	background-color: rgba(68, 109, 144, 0.5);
+	border: 5px yellow groove;
+ 	padding-right: 4px;
+ 	margin: auto;
+ 	
+}
+
+#conteneur1
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+
+.element_c1:nth-child(1)
+{
+	background-color: grey;
+}
+
+.element_c1:nth-child(2)
+{
+	align-self: flex-end;
+    background-color: blue;
+}
+
+#section3
+{
+	width: 25%;
+	background-color: rgba(176, 224, 230, 0.5);
+	border: 5px yellow ridge ;
+	border-radius: 15px;
+ 	padding-right: 4px;
+ 	
+}
+
+#section4
+{
+	width: 29%;
+	height: 100px;
+	color: black;
+	background-color: rgba(176, 224, 230, 0.5);
+	border: 5px yellow ridge ;
+	border-radius: 15px;
+ 	padding-right: 4px;
+ 	padding-left: 15px;
+ 	
+}
+
+#section5
+{
+	width: 29%;
+	height: 100px;
+	overflow: auto;
+	color: black;
+	background-color: rgba(176, 224, 230, 0.5);
+	border: 5px yellow ridge ;
+	border-radius: 15px;
+ 	padding-right: 4px;
+ 	padding-left: 15px;
+ 	 	
+}
+
+.class1
+{
+	color: red;
+/* 	background-color: #00FFFF; */
+	background-color: rgba(0,255,255,0.5);
+}
+
+.class2
+{
+	color: #ff00ff;
+	background-color: rgba(0,255,255,1);
+}
+
+.class_merienda
+{
+	font-family: Merienda, Arial, sans-serif;
+}
+
+.class_air
+{
+	font-family: Airstream, Arial, sans-serif;
+	font-size: 20px;
+}
+
+.class_arial
+{
+	font-family: Arial;
+}
